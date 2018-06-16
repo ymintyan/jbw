@@ -1,0 +1,378 @@
+* {
+  font-family: 'Lato',sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #5ca45d;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+.helper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 40px; }
+  @media (min-width: 1200px) {
+    .helper {
+      text-align: center; } }
+  .helper p {
+    display: inline-block;
+    color: #fff; }
+    @media (max-width: 700px) {
+      .helper p {
+        display: inline; } }
+  .helper span {
+    display: inline-block;
+    margin-left: 200px;
+    color: #fff; }
+    .helper span:hover {
+      cursor: pointer; }
+    @media (max-width: 900px) {
+      .helper span {
+        margin-left: 30px; } }
+
+.congrats {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .congrats .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    background: #fff;
+    text-align: center; }
+    .congrats .modal a {
+      display: block;
+      width: 50%;
+      padding: 10px 20px;
+      background: #08c008;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      margin: 20px auto; }
+    .congrats .modal .fa {
+      color: #08c008;
+      font-size: 60px;
+      -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+      transform: rotate(-30deg);
+      margin-bottom: 30px; }
+    .congrats .modal .close_congrats {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: lightgray;
+      cursor: pointer; }
+    .congrats .modal p {
+      font-size: 11px;
+      color: lightgray; }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .popup form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    min-height: 100px;
+    padding: 30px;
+    background: #fff; }
+    .popup form h3 {
+      font-size: 14px;
+      text-align: center; }
+    .popup form p {
+      font-size: 10px;
+      color: gray;
+      text-align: center;
+      margin: 10px 0; }
+    .popup form label {
+      display: block;
+      color: gray;
+      font-size: 10px;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+    .popup form input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid lightgray;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+      .popup form input:focus {
+        outline: none;
+        border-color: #08c008; }
+    .popup form button {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 20px;
+      background: #08c008;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer; }
+      .popup form button:focus {
+        outline: none; }
+      .popup form button i {
+        font-size: 9px; }
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: lightgray;
+    cursor: pointer; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px; }
+  @media (max-width: 850px) {
+    .wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 450px) {
+    .wrapper {
+      padding: 20px; } }
+  .wrapper .left p {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 600; }
+    .wrapper .left p:nth-of-type(2) {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 400; }
+    .wrapper .left p .yellow {
+      color: yellow; }
+  @media (max-width: 850px) {
+    .wrapper .left {
+      margin-top: 80px; } }
+  .wrapper .right {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    margin-left: 40px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+    @media (max-width: 850px) {
+      .wrapper .right {
+        margin: 50px auto; } }
+    .wrapper .right form p.gray {
+      color: gray;
+      margin-top: 10px;
+      font-size: 12px; }
+    .wrapper .right form select {
+      width: 100%;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: url(https://www.icon2s.com/wp-content/uploads/2014/07/expand-arrow22.png) no-repeat right;
+      -webkit-appearance: none;
+      -webkit-background-size: 10px 10px;
+      background-size: 10px;
+      background-position-x: 235px; }
+    .wrapper .right .controls {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 10px; }
+      .wrapper .right .controls > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 45%;
+        height: 25px; }
+        .wrapper .right .controls > div > div, .wrapper .right .controls > div > input {
+          width: 33.3%;
+          text-align: center;
+          color: #fff; }
+        .wrapper .right .controls > div > input {
+          color: #000; }
+      .wrapper .right .controls .plus_btn {
+        background: gray;
+        -webkit-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        cursor: pointer; }
+      .wrapper .right .controls .minus_btn {
+        background: gray;
+        -webkit-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer; }
+      .wrapper .right .controls .popup_btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 10px; }
+        .wrapper .right .controls .popup_btn > div {
+          width: 50%;
+          background: #08c008;
+          -webkit-border-top-right-radius: 5px;
+          border-top-right-radius: 5px;
+          -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px; }
+          .wrapper .right .controls .popup_btn > div a {
+            display: block;
+            height: 100%;
+            padding: 5px;
+            color: #fff;
+            text-decoration: none; }
+        .wrapper .right .controls .popup_btn #price {
+          background: gray;
+          padding: 5px;
+          -webkit-border-top-left-radius: 5px;
+          border-top-left-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          -webkit-border-top-right-radius: 0px;
+          border-top-right-radius: 0px;
+          -webkit-border-bottom-right-radius: 0px;
+          border-bottom-right-radius: 0px; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  margin: 0; }
+
+::-moz-selection {
+  background: transparent; }
+
+::selection {
+  background: transparent; }
+
+.countries {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .countries ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%; }
+  .countries li {
+    width: 25px;
+    height: 20px;
+    -webkit-background-size: cover;
+    background-size: cover; }
+    .countries li.ua {
+      background-image: url(http://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/512/Ukraine-icon.png); }
+    .countries li.bel {
+      background-image: url(https://cdn3.iconfinder.com/data/icons/world-flags-5/512/87-Belgium_Belgian_BEL_Dutch_Europe_european_country_flag_-512.png); }
+    .countries li.usa {
+      background-image: url(https://cdn3.iconfinder.com/data/icons/world-flags-5/512/26-United_States_of_America_USA_american_americans_united_states_state_US_country_flag_-512.png); }
+
+.selected_country {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%;
+  position: relative;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-right: none; }
+  .selected_country p {
+    width: 25px;
+    height: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0 5px 0 0 !important; }
+    .selected_country p.ua {
+      background-image: url(http://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/512/Ukraine-icon.png);
+      text-align: initial !important; }
+    .selected_country p.bel {
+      background-image: url(https://cdn3.iconfinder.com/data/icons/world-flags-5/512/87-Belgium_Belgian_BEL_Dutch_Europe_european_country_flag_-512.png); }
+    .selected_country p.usa {
+      background-image: url(https://cdn3.iconfinder.com/data/icons/world-flags-5/512/26-United_States_of_America_USA_american_americans_united_states_state_US_country_flag_-512.png); }
+  .selected_country i {
+    font-size: 10px;
+    color: gray;
+    cursor: pointer; }
+
+#phone {
+  width: 80%; }
+
+#form_userdata .phone_label {
+  text-align: initial; }
+
+#form_userdata .name_wrap, #form_userdata .email_wrap {
+  position: relative; }
+  #form_userdata .name_wrap input, #form_userdata .email_wrap input {
+    padding-left: 30px; }
+  #form_userdata .name_wrap i.fa, #form_userdata .email_wrap i.fa {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 17px; }
+  #form_userdata .name_wrap .fa-user, #form_userdata .email_wrap .fa-user {
+    color: gray; }
+  #form_userdata .name_wrap .fa-envelope, #form_userdata .email_wrap .fa-envelope {
+    color: #08c008; }
