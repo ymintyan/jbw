@@ -181,7 +181,7 @@ body {
 		justify-content: center;
 	}
 	@media (max-width: 450px) {
-		padding: 20px;
+		padding: 0px;
 	}
 	.left {
 		p {
@@ -200,6 +200,9 @@ body {
 		}
 		@media (max-width: 850px) {
 			margin-top: 80px;
+		}
+		@media (max-width: 450px) {
+			padding: 15px;
 		}
 	}
 	.right {
