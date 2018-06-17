@@ -205,8 +205,10 @@ body {
     .wrapper .left {
       margin-top: 80px; } }
   @media (max-width: 450px) {
-			padding: 15px;
-		}
+	  .wrapper .left {
+	  	padding: 15px;
+	  }
+  }
   .wrapper .right {
     background: #fff;
     width: 300px;
