@@ -189,7 +189,7 @@ body {
       flex-direction: column; } }
   @media (max-width: 450px) {
     .wrapper {
-      padding: 20px; } }
+      padding: 0px; } }
   .wrapper .left p {
     font-size: 40px;
     color: #fff;
@@ -204,6 +204,9 @@ body {
   @media (max-width: 850px) {
     .wrapper .left {
       margin-top: 80px; } }
+  @media (max-width: 450px) {
+			padding: 15px;
+		}
   .wrapper .right {
     background: #fff;
     width: 300px;
