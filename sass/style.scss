@@ -176,6 +176,9 @@ body {
 .wrapper {
 	display: flex;
 	padding: 40px;
+	@media (min-width: 1500px) {
+		justify-content: center;
+	}
 	@media (min-width: 1200px) and (max-width: 1500px) {
 		padding: 0px;
 	}
