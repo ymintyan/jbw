@@ -176,6 +176,11 @@ body {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media (min-width: 1200px) {
+	  .wrapper {
+	  	padding: 0px;
+	  }	
+	}
   @media (max-width: 850px) {
     .wrapper {
       -webkit-box-orient: vertical;
