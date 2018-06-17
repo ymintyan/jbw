@@ -82,7 +82,7 @@ $(document).ready(function(){
 
 	$(".continue").click(function(e){
 		e.preventDefault();
-		var re_name = /^[а-яА-я0-9\W]{3,}$/;
+		var re_name = /^[а-яА-я0-9\W_]{3,}$/;
 		var re_phone = /^\+[0-9]{12,}$/;
 		var name = $("#name").val();
 		var email = $("#email").val();
