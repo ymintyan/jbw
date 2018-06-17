@@ -89,7 +89,7 @@ $(document).ready(function(){
 		var phone = $("#phone").val();
 
 		if(!validateEmail(email) || !re_name.test(name) || !re_phone.test(phone)) {
-			alert('Check your input!\nминимум 3 символа в поле Name\nвалидно заполнено поле Email\nв поле Your phone минимум 10 цифр(с кодом страны минимум 12 цифр)');
+			alert('Проверьте ввод!\nминимум 3 символа в поле Name\nвалидно заполнено поле Email\nв поле Your phone минимум 10 цифр(с кодом страны минимум 12 цифр)');
 			return;
 		}
 		else {
