@@ -176,6 +176,9 @@ body {
 .wrapper {
 	display: flex;
 	padding: 40px;
+	@media (min-width: 1200px) {
+		padding: 0px;
+	}
 	@media (max-width: 850px) {
 		flex-direction: column;
 		justify-content: center;
