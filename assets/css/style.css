@@ -176,7 +176,7 @@ body {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1500px) {
 	  .wrapper {
 	  	padding: 0px;
 	  }	
