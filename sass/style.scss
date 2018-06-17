@@ -24,7 +24,7 @@ body {
 	width: 100%;
 	background: rgba(0,0,0,.2);
 	padding: 20px 40px;
-	@media (min-width: 1200px) {
+	@media (min-width: 1500px) {
 		text-align: center;
 	}
 	p {
@@ -244,6 +244,10 @@ body {
 					width: 33.3%;
 					text-align: center;
 					color: #fff;
+					background: #fff;
+					border: 1px solid gray;
+					border-left: none;
+					border-right: none;
 				}
 				& > input {
 					color: #000;
