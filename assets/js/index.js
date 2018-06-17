@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 
 	var myModal = document.getElementById('user_form');
-	var congrats = document.getElementsbyClassName('congrats')[0];
+	var congrats = document.getElementsByClassName('congrats')[0];
 	
 	$(window).click(function(e) {
 	    if (e.target == myModal) {
