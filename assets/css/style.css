@@ -29,7 +29,7 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px 40px; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1500px) {
     .helper {
       text-align: center; } }
   .helper p {
@@ -166,6 +166,9 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 40px; }
   @media (max-width: 850px) {
     .wrapper {
@@ -238,7 +241,11 @@ body {
         .wrapper .right .controls > div > div, .wrapper .right .controls > div > input {
           width: 33.3%;
           text-align: center;
-          color: #fff; }
+          color: #fff;
+          background: #fff;
+          border: 1px solid lightgray;
+          border-left: none;
+          border-right: none; }
         .wrapper .right .controls > div > input {
           color: #000; }
       .wrapper .right .controls .plus_btn {
@@ -313,7 +320,7 @@ input[type=number] {
     display: none;
     position: absolute;
     top: 100%;
-	left: 10%;	}
+    left: 10%; }
   .countries li {
     width: 25px;
     height: 20px;
