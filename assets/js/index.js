@@ -89,7 +89,7 @@ $(document).ready(function(){
 		var phone = $("#phone").val();
 
 		if(!validateEmail(email) || !re_name.test(name) || !re_phone.test(phone)) {
-			alert('Check your input!');
+			alert('Check your input!\nминимум 3 символа в поле Name\nвалидно заполнено поле Email\nв поле Your phone минимум 10 цифр');
 			return;
 		}
 		else {
@@ -110,7 +110,6 @@ $(document).ready(function(){
 
 	$("#ok").click(function(e){
 		e.preventDefault();
-		console.log(location);
 		window.location.href = location;
 	});
 });
