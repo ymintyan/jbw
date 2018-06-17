@@ -88,7 +88,10 @@ $(document).ready(function(){
 		var email = $("#email").val();
 		var phone = $("#phone").val();
 
-		if(!validateEmail(email) || !re_name.test(name) || !re_phone.test(phone)) return;
+		if(!validateEmail(email) || !re_name.test(name) || !re_phone.test(phone)) {
+			alert('Check your input!');
+			return;
+		}
 		else {
 			data.name = name;
 			data.email = email;
