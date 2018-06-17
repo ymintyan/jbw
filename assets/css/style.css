@@ -174,17 +174,19 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 40px; }
+  @media (min-width: 1500px) {
+    .wrapper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   @media (max-width: 850px) {
     .wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+      flex-direction: column; } }
   @media (max-width: 450px) {
     .wrapper {
       padding: 20px; } }
